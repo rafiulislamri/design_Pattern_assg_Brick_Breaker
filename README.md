@@ -1,18 +1,42 @@
-## Getting Started
+## Brick Breaker - Java (Design Pattern Base GAME)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- File Structure -
+  BrickBreakerGame/
+└─ src/
+   ├─ main/
+   │  ├─ GameLauncher.java
+   │  ├─ GameFrame.java
+   │  └─ GamePanel.java
+   ├─ core/
+   │  ├─ GameManager.java
+   │  ├─ Level.java
+   │  ├─ LevelBuilder.java
+   │  ├─ CollisionHandler.java
+   │  ├─ PaddleCollision.java
+   │  ├─ BrickCollision.java
+   │  └─ WallCollision.java
+   ├─ entities/
+   │  ├─ Paddle.java
+   │  ├─ Ball.java
+   │  ├─ Brick.java
+   │  ├─ NormalBrick.java
+   │  ├─ StrongBrick.java
+   │  └─ BonusBrick.java
+   ├─ patterns/
+   │  ├─ BrickFactory.java
+   │  ├─ PaddleDecorator.java
+   │  ├─ SpeedBoost.java
+   │  ├─ Observer.java
+   │  ├─ Subject.java
+   │  └─ ScoreBoard.java
+   └─ utils/
+      └─ SoundPlayer.java
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Terminal Commands to EXECUTE
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+cd "File_Path_Leading_to_'src'_file"
+javac main/*.java core/*.java entities/*.java patterns/*.java utils/*.java
+java main.GameLauncher
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
